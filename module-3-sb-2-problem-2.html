@@ -26,12 +26,42 @@
         <script>
             function startThings() {
                 let romanNumeral // do not modify
-                // your code goes here
-                // be sure to assign the roman numeral to the variable romanNumeral
-                // it will be used to display it on the web page using the code below
-
-
-
+                switch (prompt("Please enter a number from 1 to 10 to convert to a Roman Numeral","5")) {
+                    case "1":
+                        romanNumeral = "I"
+                        break;
+                    case "2":
+                        romanNumeral = "II"
+                        break;
+                    case "3":
+                        romanNumeral = "III"
+                        break;
+                    case "4":
+                        romanNumeral = "IV"
+                        break;
+                    case "5":
+                        romanNumeral = "V"
+                        break;
+                    case "6":
+                        romanNumeral = "VI"
+                        break;
+                    case "7":
+                        romanNumeral = "VII"
+                        break;
+                    case "8":
+                        romanNumeral = "VIII"
+                        break;
+                    case "9":
+                        romanNumeral = "IX"
+                        break;
+                    case "10":
+                        romanNumeral = "X"
+                        break;
+                    default:
+                        alert("WARNING!! Please enter a valid number between 1 and 10");
+                        romanNumeral = "Oops"
+                        break;
+                }
                 // do not modify start
                 let outputDiv = document.getElementById('output')
                 outputDiv.innerHTML = romanNumeral
